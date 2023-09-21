@@ -94,10 +94,10 @@
   % \mailaddress{Åddrésş, Street, 00000 Cóuntry}
   % \location{Location, COUNTRY}
   \homepage{joshhjacobson.com}
-  % \twitter{@joshhjacobson}
+  \twitter{@joshhjacobson}
   \linkedin{joshhjacobson}
   \github{joshhjacobson}
-  \orcid{0000-0003-4418-2208}
+  % \orcid{0000-0003-4418-2208}
   %% You can add your own arbitrary detail with
   %% \printinfo{symbol}{detail}[optional hyperlink prefix]
   % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
@@ -120,97 +120,130 @@
 
 \makecvheader
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
-% \AtBeginEnvironment{itemize}{\small}
+\AtBeginEnvironment{itemize}{\small}
 
 %% Set the left/right column width ratio to 4:6.
-\columnratio{0.38}
+\columnratio{0.6}
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
 
-  \cvsection{Education}
-
-  \cvevent{Ph.D.,\ Applied Statistics}{University of Wollongong}{2020 -- Ongoing}{}
-  Thesis title: Wonderful Research
-
-  \divider
-
-  \cvevent{M.S.,\ Applied Mathematics}{University of Colorado}{2018 -- 2020}{}
-
-  \divider
-
-  \cvevent{B.S.,\ Applied Mathematics}{University of Colorado}{2015 -- 2019}{}
-
-
-  \cvsection{Skills}
-
-  \cvtag{Hard-working}
-  \cvtag{Eye for detail}\\
-  \cvtag{Motivator \& Leader}
-
-  \divider\smallskip
-
-  \cvtag{C++}
-  \cvtag{Embedded Systems}\\
-  \cvtag{Statistical Analysis}
-
-  \cvsection{Awards}
-
-  \cvskill{English}{5}
-  \divider
-
-  \cvskill{Spanish}{4}
-  \divider
-
-  \cvskill{German}{3.5} %% Supports X.5 values.
-
-  %% Yeah I didn't spend too much time making all the
-  %% spacing consistent... sorry. Use \smallskip, \medskip,
-  %% \bigskip, \vspace etc to make adjustments.
-  \medskip
-
-
-  %% Switch to the right column. This will now automatically move to the second
-  %% page if the content is too long.
-  \switchcolumn
-
 
   \cvsection{Experience}
 
-  \cvevent{Graduate Research Assistant \& Tutor}{University of Wollongong}{Aug 2020 -- Ongoing}{Wollongong, NSW, Australia}
+  \cvevent{Graduate Research Fellow \& Tutor}{University of Wollongong}{Aug 2020 -- Present}{Wollongong, NSW, Australia}
   \begin{itemize}
-    \item Job description 1
-    \item Job description 2
+    \item Conduct Ph.D. research developing hierarchical spatio-temporal statistical models for environmental applications, focusing especially on the global carbon cycle
+    \item Awarded competitive fellowship to carry out independently-developed research agenda
+    \item Publish research in leading journals; Attend and organize scientific conferences; Aid in developing and writing scientific grants
+    \item Translate technical research manuscripts into public-facing content
+    \item Lecture, tutor, and grade applied statistics graduate and undergraduate courses (2 semesters)
   \end{itemize}
 
   \divider
 
   \cvevent{Data Science Consultant}{Jupiter Intelligence, Inc.}{Sep 2019 -- Jan 2023}{Boulder, CO, USA}
   \begin{itemize}
-    \item Job description 1
-    \item Job description 2
+    \item Developed and helped engineer an approximate Bayesian computation algorithm for parameter estimation in the company's global climate risk product; created a 10-fold speedup due to parallelization, yielding roughly \$8,000 in monthly compute cost savings
+    \item Designed, helped build, and extensively tested a proprietary Python package for statistical modeling of climate extremes; package was adopted in scientific and operational workflows
+    \item Collaborated on scientific reports for industry partners; presented research and development work at scientific conferences
+    \item Full-time position during 2022, part-time during 2019--2021
   \end{itemize}
 
   \divider
 
-  \cvevent{Undergraduate Research Assistant \& Tutor}{University of Colorado}{Aug 2017 -- May 2019}{Boulder, CO, USA}
+  \cvevent{Undergraduate Researcher \& Tutor}{University of Colorado}{Aug 2017 -- May 2019}{Boulder, CO, USA}
   \begin{itemize}
-    \item Job description 1
-    \item Job description 2
+    \item Assisted in researching visualization techniques for high-dimensional optimization problems in water-resource management
+    \item Recieved Active Learning Award for engagements in research, service, and professional internships
+    \item Tutored and graded applied math and computer science undergraduate courses (2 semesters)
+  \end{itemize}
+
+  \medskip
+
+  \cvsection{Service \& Leadership}
+
+  \cvevent{Front-of-house volunteer}{Flame Tree Food Co-Op}{time period}{location}
+
+  \cvevent{Open-source developer}{}{time period}{location}
+
+  \cvevent{Radio Show Host}{Probably Novel Podcast}{time period}{location}
+
+  %% Switch to the right column. This will now automatically move to the second
+  %% page if the content is too long.
+  \switchcolumn
+
+  \cvsection{Education}
+
+  \cvevent{Ph.D. in Applied Statistics}{\newline University of Wollongong}{2020 -- Present}{}
+  
+  \vspace{-1em}
+  \divider
+
+  \cvevent{M.S. in Applied Mathematics}{\newline University of Colorado}{2018 -- 2020}{GPA: 3.9}
+
+  \vspace{-1em}
+  \divider
+
+  \cvevent{B.S. with Honors in Applied Mathematics}{\newline University of Colorado}{2015 -- 2019}{GPA: 3.8}
+  {\small Minors: Atmospheric Science, Computer Science}
+
+  \medskip
+
+  \cvsection{Skills}
+
+  \cvevent{Qualitative \& Technical Skills}{}{}{}
+  \begin{itemize}
+    \item Scientific programming in Python and R (5+ years), with focuses on:
+      \begin{itemize}
+        \item Geo-spatial data analysis (e.g., numpy, scipy, pandas, xarray, dask, sf, stars)
+        \item Bayesian and spatial statistical modeling (e.g., PyMC, R-INLA, gstat, spacetime, FRK)
+        \item Data visualization (e.g., matplotlib, seaborn, ggplot2)
+      \end{itemize}
+    \item Exceptional quantitative and statistical skills processing, analyzing, and visualizing large, multivariate datasets
+    \item Expertise developing and analyzing hierarchical statistical models with climate applications
+    \item Ability to run, analyze, and understand global atmospheric flux-inversion models
+    \item Proficient in Linux, Git, CDO, and experience in high-performance computing environments
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Communication Skills}{}{}{}
+  \begin{itemize}
+    \item Published 5 peer-reviewed scientific articles in high-impact journals, including \textit{Remote Sensing}; Outlined, drafted,
+    and edited manuscripts; Responded to peer-reviewed critiques as both a lead and co-author
+    \item Developed publication-quality figures to craft coherent stories and visualize complex results of data analysis
+    \item 14 scientific talks, nationally and internationally, to a range of technical and non-specialist audiences; Received ``best poster'' awards from professional societies
+    \item Additional scientific outreach and communication through hosting Probably Novel Radio Show and Podcast (University of Colorado, 2019-2020)
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Project Management Skills}{}{}{}
+  \begin{itemize}
+    \item Independently manage multiple research projects simultaneously across diverse groups of coauthors world-wide
+    \item Self-motivated: able to set and meet internal deadlines to ensure effective, timely dissemination of research results
+    \item Experience managing and mentoring an undergraduate intern on an original research project
   \end{itemize}
 
 
-  \cvsection{Selected Publications}
+  %% Yeah I didn't spend too much time making all the
+  %% spacing consistent... sorry. Use \smallskip, \medskip,
+  %% \bigskip, \vspace etc to make adjustments.
+  % \medskip
+
+
+  % \cvsection{Selected Publications}
 
   %% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
   %% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
   %% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
-  \mynames{Jacobson/Josh}
+  % \mynames{Jacobson/Josh}
   %% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
 
-  \nocite{*}
-  \printbibliography[heading=none]
+  % \nocite{*}
+  % \printbibliography[heading=none]
 
 
 \end{paracol}
