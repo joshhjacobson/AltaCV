@@ -113,7 +113,7 @@
 % \RequirePackage{marginfix}
 
 \setlength{\parindent}{0pt}
-\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
+\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\smallskip}
 
 \newenvironment{fullwidth}{%
   \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
@@ -271,7 +271,8 @@
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
   {\color{heading}\cvsectionfont\MakeUppercase{#2}}%\\[-1ex]%
   %{\color{headingrule}\rule{\linewidth}{2pt}\par}
-  \bigskip
+  % \bigskip
+  \medskip
 }
 
 \newcommand{\cvsubsection}[1]{%
@@ -283,7 +284,7 @@
 \newcommand{\cvevent}[4]{%
   % {\large\color{emphasis}#1\par}
   \textbf{\color{emphasis}#1}
-  \smallskip\normalsize
+  % \smallskip\normalsize
   \hfill\normalsize
   \ifstrequal{#2}{}{}{
   % \textbf{\color{accent}#2}\par
