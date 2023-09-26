@@ -282,8 +282,8 @@
 % v1.1.4: fixes inconsistent font size
 \newcommand{\cvevent}[4]{%
   % {\large\color{emphasis}#1\par}
-  {\color{emphasis}#1}
-  % \smallskip\normalsize
+  \textbf{\color{emphasis}#1}
+  \smallskip\normalsize
   \hfill\normalsize
   \ifstrequal{#2}{}{}{
   % \textbf{\color{accent}#2}\par
